@@ -1,15 +1,18 @@
+import { useState } from 'preact/hooks'
 
 function Tag(props)
 {
 
-	const color = '#ff00ff';
+	const [color, setColor] = useState('#00FFFF');
 
 	return(
 		<div class='text-sm rouned-md flex flex-col ' style='background-color: {color}; ' >
-		<p class='flex flex-row bg-orange-400 text-normal'>{props.text}</p>
-			<p>{ color }</p>
+		<p class='p-4 flex flex-row text-normal' style='background-color: {{ color }};'>{props.text}</p>
 
-			<input type="range" class='' />
+		<button onClick={() => setColor((color) => '#F00F0F')}>
+			color is {color}
+		</button>
+
 
 		</div>
 	)
