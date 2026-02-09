@@ -4,7 +4,7 @@ import viteLogo from '/vite.svg'
 import Tag from './tag'
 import './app.css'
 
-function Header(props)
+function Element(props)
 {
 	let name = 'Test Name Not Prop';
 
@@ -20,7 +20,7 @@ export function App()
 {
 	return (
 		<div>
-			<Header text='Hello' />
+			<Element text='Hello' />
 		</div>
 	)
 }
