@@ -1,9 +1,9 @@
 
-function Container()
+function Container(props)
 {
 	return(
-		<div class='container mx-auto bg-zinc-200'>
-			Container
+		<div class='container mx-auto'>
+			{props.children}
 		</div>
 	)
 }
